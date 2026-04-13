@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ngi.css">
+  <link rel="icon" href="profile.png">
+  <link rel="stylesheet" href="style.css">
+  <title>ARCHIVEco</title>
+</head>
+
+ 
+
+  <body>
+     <header class="navbar">
+    <div class="logo">ARCHIVEco</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#szchart">Size Chart</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+    
+    
+    <section id="home" class="hero">
+      <div class="overlay"></div>
+        <div class="hero-text">
+          <img src="profile.png" alt="ARCHIVEco Logo" class="logo">
+          <p>Modern Streetwear Archive</p>
+          <a href="#items" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="items" class="shop-category">
+      <div class="category-container">
+        <a href="#shirts" class="category-card shirts-card"><span>T-SHIRTS</span></a>
+        <a href="#hoodies" class="category-card hoodies-card"><span>HOODIES</span></a>
+      </div>
+    </section>
+    
+    
+  <section id="shirts" class="products">
+    <h2>Shirt Collections</h2>
+
+    <div class="product-grid">
+
+      <div class="product">
+        <article class="card" onclick="openModal('Keep it on Archive Boxy Cropped Tee (White)')">
+        <img src="KIOA(white).jpg" alt="Keep it on Archive Tee">
+        <h3>Keep it on Archive Boxy Cropped Tee (White)</h3>
+        <p>₱1200</p>
+      </div>
+      
+      <div class="product">
+        <article class="card" onclick="openModal('Keep it on Archive Boxy Cropped Tee (Black)')">
+        <img src="KIOA(black).jpg" alt="Keep it on Archive Tee">
+        <h3>Keep it on Archive Boxy Cropped Tee (Black)</h3>
+        <p>₱1200</p>
+      </div>
+
+      <div class="product">
+        <article class="card" onclick="openModal('Archive Minimal Boxy Cropped Tee (White)')">
+        <img src="ARC(white).png" alt="Plain Tee">
+        <h3>Archive Minimal Boxy Cropped Tee (White)</h3>
+        <p>₱450</p>
+      </div>
+      
+      <div class="product">
+        <article class="card" onclick="openModal('Archive Minimal Boxy Cropped Tee (Black)')">
+        <img src="ARC(black).png" alt="Plain Tee">
+        <h3>Archive Minimal Boxy Cropped Tee (Black)</h3>
+        <p>₱450</p>
+      </div>
+
+      <div class="product">
+        <article class="card" onclick="openModal('Archive Front Print Boxy Cropped Tee (White)')">
+        <img src="Frontp(white).png" alt="Archive Front Print Tee">
+        <h3>Archive Front Print Boxy Cropped Tee (White)</h3>
+        <p>₱800</p>
+      </div>
+      
+      <div class="product">
+        <article class="card" onclick="openModal('Archive Front Print Boxy Cropped Tee (Black)')">
+        <img src="Frontp(black).png" alt="Archive Front Print Tee">
+        <h3>Archive Front Print Boxy Cropped Tee (Black)</h3>
+        <p>₱800</p>
+      </div>
+
+      <div class="product">
+        <article class="card" onclick="openModal('Archived But Alive Boxy Cropped Tee (White)')">
+        <img src="ABA(white).png" alt="Archived But Alive Tee">
+        <h3>Archived But Alive Boxy Cropped Tee (White)</h3>
+        <p>₱800</p>
+      </div>
+      
+      <div class="product">
+        <article class="card" onclick="openModal('Archived But Alive Boxy Cropped Tee (Black)')">
+        <img src="ABA(black).png" alt="Archived But Alive Tee">
+        <h3>Archived But Alive Boxy Cropped Tee (Black)</h3>
+        <p>₱800</p>
+      </div>
+            
+      <div class="filter-container">
+        <button class="filter-btn" onclick="filterSelection('all')"><a href="#items">Show All</a></button>
+        <button class="filter-btn" onclick="filterSelection('shirts')"><a href="#shirts">Shirts</a></button>
+        <button class="filter-btn" onclick="filterSelection('hoodies')"><a href="#hoodies">Hoodies</a></button>
+      </div>
+
+    </div>
+  </section>
+    
+      <section id="hoodies" class="products">
+    <h2>Hoodie Collections</h2>
+
+    <div class="product-grid">
+
+      <div class="product">
+        <article class="card" onclick="openModal('Archive Boxy Cropped Hoodie (Gray)')">
+        <img src="ARChood(gray).jpg" alt="Archive Gray Hoodie">
+        <h3>Archive Boxy Cropped Hoodie (Gray)</h3>
+        <p>₱1400</p>
+      </div>
+
+      <div class="product">
+        <article class="card" onclick="openModal('Archive Boxy Cropped Hoodie (White)')">
+        <img src="ARChood(white).jpg" alt="Archive White Hoodie">
+        <h3>Archive Boxy Cropped Hoodie (White)</h3>
+        <p>₱1400</p>
+      </div>
+
+      <div class="product">
+        <article class="card" onclick="openModal('Archive Boxy Cropped Hoodie (Black)')">
+        <img src="ARChood(black).jpg" alt="Archive Black Hoodie">
+        <h3>Archive Boxy Cropped Hoodie (Black)</h3>
+        <p>₱1400</p>
+      </div>
+
+      <div class="product">
+        <article class="card" onclick="openModal('Plain Archive Boxy Cropped Hoodie (Gray)')">
+        <img src="grayhood.png">
+        <h3>Plain Archive Boxy Cropped Hoodie (Gray)</h3>
+        <p>₱1400</p>
+      </div>
+      
+      <div class="product">
+        <article class="card" onclick="openModal('Plain Archive Boxy Cropped Hoodie (White)')">
+        <img src="whitehood.png">
+        <h3>Plain Archive Boxy Cropped Hoodie (White)</h3>
+        <p>₱1400</p>
+      </div>
+      
+       <div class="product">
+          <article class="card" onclick="openModal('Plain Archive Boxy Cropped Hoodie (Black)')">
+        <img src="blackhood.png">
+        <h3>Plain Archive Boxy Cropped Hoodie (Black)</h3>
+        <p>₱1400</p>
+      </div>
+                         
+      <div class="filter-container">
+        <button class="filter-btn" onclick="filterSelection('all')"><a href="#items">Show All</a></button>
+        <button class="filter-btn" onclick="filterSelection('shirts')"><a href="#shirts">Shirts</a></button>
+        <button class="filter-btn" onclick="filterSelection('hoodies')"><a href="#hoodies">Hoodies</a></button>
+      </div>
+
+    </div> 
+  </section>
+    
+    <section id="modal" class="modal">
+       <div class="modal-box">
+          <h2 id="productName"></h2>
+             <label>Select Size</label>
+                <select>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                </select>      
+          <button onclick="orderNow()">ORDER NOW</button>
+          <button onclick="addToCart('Archive Minimal Boxy Cropped Tee (White)', 450, 'size-s3')">Add to Cart</button>
+          <button class="close" onclick="closeModal()">CLOSE</button>
+       </div>
+    </section>
+    
+
+<section id="szchart" class="sizechart">
+<h2>T-Shirt Size Chart</h2>
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>Size</th>
+<th>Chest (inches)</th>
+<th>Length (inches)</th>
+<th>Shoulder (inches)</th>
+</tr>
+
+<tr>
+<td>S</td>
+<td>38</td>
+<td>26</td>
+<td>17</td>
+</tr>
+
+<tr>
+<td>M</td>
+<td>40</td>
+<td>27</td>
+<td>18</td>
+</tr>
+
+<tr>
+<td>L</td>
+<td>42</td>
+<td>28</td>
+<td>19</td>
+</tr>
+
+<tr>
+<td>XL</td>
+<td>44</td>
+<td>29</td>
+<td>20</td>
+</tr>
+
+</table>
+</div>
+  <br>
+  <br>
+  <br>
+<h2>Hoodie Size Chart</h2>
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>Size</th>
+<th>Chest (inches)</th>
+<th>Length (inches)</th>
+<th>Shoulder (inches)</th>
+</tr>
+
+<tr>
+<td>S</td>
+<td>38</td>
+<td>26</td>
+<td>17</td>
+</tr>
+
+<tr>
+<td>M</td>
+<td>40</td>
+<td>27</td>
+<td>18</td>
+</tr>
+
+<tr>
+<td>L</td>
+<td>42</td>
+<td>28</td>
+<td>19</td>
+</tr>
+
+<tr>
+<td>XL</td>
+<td>44</td>
+<td>29</td>
+<td>20</td>
+</tr>
+
+</table>
+</section> 
+
+
+  <section id="about" class="about">
+    <h2>About</h2>
+    <p>ARCHIVEco is a modern streetwear brand inspired by archive fashion and culture.</p>
+  </section>
+  
+         <section id="contact" class="contact">      
+      <h2>Contact Us</h2>
+      <p> &#x2709; : Archiveco@email.com</p>  
+      <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      </form>
+
+      <div class="socials">
+      
+      <a href="https://facebook.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook Icon">
+      </a>
+      
+      <a href="https://instagram.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram Icon">
+      </a>
+      
+      <a href="https://www.tiktok.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="Tiktok Icon">
+      </a>
+        
+      </div>
+      
+      </section>
+
+  <footer>
+    <p>© 2026 ARCHIVEco</p>
+  </footer>
+
+   <script>
+
+  
+  
+function openModal(name){
+
+const modal=document.getElementById("modal")
+const title=document.getElementById("productName")
+
+modal.style.display="flex"
+
+title.innerText=name
+
+}
+
+function closeModal(){
+
+const modal=document.getElementById("modal")
+
+modal.style.display="none"
+
+}
+
+function orderNow(){
+
+alert("Order feature coming soon")
+
+}
+  
+
+</script>  
+  
+</body>
+</html>
